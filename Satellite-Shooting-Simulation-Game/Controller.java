@@ -1,18 +1,6 @@
-// implement all of the driver class
-// add a main method for use after the project is completed.
 
 import java.awt.event.*;
 
-/**
- * This class plays the role of controller of the simulation.
- * It creates the shuttle and space station objects as well as
- * the supporting canvas and label objects.
- * 
- * @author Carl Singer Brian Howard, Dave Maharry
- * @version September 2004
- * @version September 2005, revised by Carl Singer
- * @version August 2006, revised by Carl Singer
- */
 public class Controller
     implements KeyListener
 {
@@ -29,9 +17,6 @@ public class Controller
     private boolean inOrbit;         // true if the space station is orbiting
     private Label label;             // The label at the top of the simulation window
     
-    /**
-     * Class constructor. Doesn't do much.
-     */
     public Controller()
     {
         canvas = new Canvas("Space Station Fueling Simulator",800,600);
@@ -132,9 +117,6 @@ public class Controller
             sim = false;
         }    
     }
-    /**
-     * Ignore methods below this point
-     */
     public void keyReleased(KeyEvent ke)
     {
     }
