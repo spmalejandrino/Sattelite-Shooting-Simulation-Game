@@ -1,9 +1,4 @@
-/**
- * This class provides a label object (text) for a canvas
- * 
- * @author Carl Singer
- * @version September 2005
- */
+
 public class Label
 {
     // instance variables - replace the example below with your own
@@ -59,11 +54,7 @@ public class Label
         isVisible = false;
     }
     
-    /**
-     * Move to the location defined by xDistance and yDistance
-     * @param  distanceX  how far to move in the horizontal direction
-     * @param  distanceY  how far to move in the verticalal direction
-     */
+    
     public void moveTo(int newXCoord, int newYCoord)
     {
        erase();
@@ -72,21 +63,14 @@ public class Label
        draw();
    }
 
-    /**
-     * Change the color. Valid colors are "red", "yellow", "blue", "green",
-     * "magenta" and "black".
-     * 
-     * @param newColor 
-     */
+  
     public void changeColor(String newColor)
     {
         color = newColor;
         draw();
     }
 
-    /**
-     * Draw the label with current specifications on screen.
-     */
+  
     private void draw()
     {
         if(isVisible) {
@@ -94,9 +78,7 @@ public class Label
         }
     }
 
-    /**
-     * Erase the label.
-     */
+   
     public void erase()
     {
         if(isVisible) {
@@ -104,26 +86,20 @@ public class Label
         }
     }
 
-    /**
-     * sets the text of the label.
-     */
+   
     public void setText(String label)
     {
         this.label = label;
         draw();
     }
     
-    /**
-     * @return the x coordinate of the center of the label.
-     */
+   
     public int getXCoord()
     {
         return xCoord;
     }
     
-    /**
-     * @returns the y coordinate of the center of the label.
-     */
+    
     public int getYCoord()
     {
         return yCoord;
