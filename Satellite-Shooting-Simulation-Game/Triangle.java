@@ -1,12 +1,5 @@
 import java.awt.*;
 
-/**
- * A triangle that can be manipulated and that draws itself on a canvas.
- * 
- * @author  Michael Kolling & David J. Barnes (modified by: C. Singer)
- * @version 1.0  (15 July 2000)
- */
-
 public class Triangle
 {
     private int height;
@@ -17,9 +10,7 @@ public class Triangle
     private boolean isVisible;
     private Canvas canvas;
 
-    /**
-     * Create a new triangle at default position with default color.
-     */
+   
     public Triangle(Canvas canvas)
     {
         height = 30;
@@ -31,29 +22,21 @@ public class Triangle
         this.canvas = canvas;
     }
 
-    /**
-     * Make this triangle visible. If it was already visible, do nothing.
-     */
+  
     public void makeVisible()
     {
         isVisible = true;
         draw();
     }
     
-    /**
-     * Make this triangle invisible. If it was already invisible, do nothing.
-     */
+  
     public void makeInvisible()
     {
         erase();
         isVisible = false;
     }
     
-    /**
-     * Move in the direction defined by xDistance and yDistance
-     * @param  distanceX  how far to move in the horizontal direction
-     * @param  distanceY  how far to move in the verticalal direction
-     */
+   
     public void moveDirection(int xDistance, int yDistance)
     {
        erase();
@@ -62,11 +45,7 @@ public class Triangle
        draw();
    }
 
-    /**
-     * Move to the location defined by xDistance and yDistance
-     * @param  distanceX  
-     * @param  distanceY  
-     */
+   
     public void moveTo(int newXPosition, int newYPosition)
     {
        erase();
@@ -75,9 +54,7 @@ public class Triangle
        draw();
    }
 
-    /**
-     * Change the size to the new size (in pixels). Size must be >= 0.
-     */
+    
     public void changeSize(int newHeight, int newWidth)
     {
         erase();
@@ -86,19 +63,14 @@ public class Triangle
         draw();
     }
 
-    /**
-     * Change the color. Valid colors are "red", "yellow", "blue", "green",
-     * "magenta" and "black".
-     */
+    
     public void changeColor(String newColor)
     {
         color = newColor;
         draw();
     }
 
-    /*
-     * Draw the triangle with current specifications on screen.
-     */
+   
     private void draw()
     {
         if(isVisible) {
@@ -110,9 +82,7 @@ public class Triangle
         }
     }
 
-    /*
-     * Erase the triangle on screen.
-     */
+    
     public void erase()
     {
         if(isVisible) {
