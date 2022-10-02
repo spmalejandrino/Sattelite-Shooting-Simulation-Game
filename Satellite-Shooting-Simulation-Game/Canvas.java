@@ -4,26 +4,6 @@ import java.util.List;
 import java.util.*;
 import java.awt.event.*;
 
-/**
- * Canvas is a class to allow for simple graphical drawing on a canvas.
- * This is a modification of the general purpose Canvas, specially made for
- * the BlueJ "shapes" example. 
- *
- * @author: Bruce Quig
- * @author: Michael Kolling (mik)
- *
- * @version: 1.6 (shapes)
- * 
- * New version with non-static canvas to allow mutiple canvases
- * @author: Dave Maharry
- * @version: 2.0
- *
- * New version using graphics only. The previous JLabel is replaced with
- * a text graphic oblect - see the LabelDescription inner-class, DrwaString
- * and Redraw classes 
- * @author: Carl Singer
- * @version: 3.0 - August 2005
- */
 public class Canvas
 {
     // Note: The implementation of this class (specifically the handling of
