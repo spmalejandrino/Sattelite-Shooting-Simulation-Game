@@ -1,12 +1,5 @@
 import java.awt.*;
 
-/**
- * A diamond that can be manipulated and that draws itself on a canvas.
- * 
- * @author  Michael Kolling & David J. Barnes (modified by: C. Singer)
- * @version 1.0  (15 July 2000)
- */
-
 public class Diamond
 {
     private int height;
@@ -17,9 +10,6 @@ public class Diamond
     private boolean isVisible;
     private Canvas canvas;
 
-    /**
-     * Create a new triangle at default position with default color.
-     */
     public Diamond(Canvas canvas)
     {
         height = 30;
@@ -31,9 +21,7 @@ public class Diamond
         this.canvas = canvas;
     }
 
-    /**
-     * Make this diamond visible. If it was already visible, do nothing.
-     */
+  
     public void makeVisible()
     {
         isVisible = true;
@@ -49,11 +37,7 @@ public class Diamond
         isVisible = false;
     }
     
-    /**
-     * Move in the direction defined by xDistance and yDistance
-     * @param  distanceX  how far to move in the horizontal direction
-     * @param  distanceY  how far to move in the verticalal direction
-     */
+   
     public void moveDirection(int xDistance, int yDistance)
     {
        erase();
@@ -62,11 +46,7 @@ public class Diamond
        draw();
    }
 
-    /**
-     * Move to the location defined by xDistance and yDistance
-     * @param  distanceX  how far to move in the horizontal direction
-     * @param  distanceY  how far to move in the verticalal direction
-     */
+  
     public void moveTo(int newXPosition, int newYPosition)
     {
        erase();
@@ -111,9 +91,7 @@ public class Diamond
         }
     }
 
-    /*
-     * Erase the diamond on screen.
-     */
+ 
     public void erase()
     {
         if(isVisible) {
